@@ -2,7 +2,7 @@
 project:
   title:        "Current-Mode Bandgap Reference"      # Project title
   author:       "Christoph Weiser"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "christoph_36502"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "PVT stable reference voltage and current."      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
