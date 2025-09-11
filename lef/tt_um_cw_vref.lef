@@ -5,7 +5,7 @@ VERSION 5.7 ;
 MACRO tt_um_cw_vref
   CLASS BLOCK ;
   FOREIGN tt_um_cw_vref ;
-  ORIGIN 0.000 -0.060 ;
+  ORIGIN 0.000 0.000 ;
   SIZE 319.240 BY 225.760 ;
   PIN clk
     ANTENNAGATEAREA 0.852000 ;
