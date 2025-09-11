@@ -30,6 +30,7 @@ wire vbuf;
 wire [2:0] w_reg_pointer;
 wire [63:0] w_trim;
 wire [7:0] w_data;
+wire w_miso;
 
 
 bandgap
@@ -192,12 +193,12 @@ spi_trim xspt (
  .i_sclk( uio_in[6] ),
  .i_cs_n( uio_in[5] ),
  .i_mosi( uio_in[3] ),
- .o_miso( uio_out[4] ),
+ .o_miso( w_miso ),
  .o_reg_pointer( w_reg_pointer ),
  .o_trim( w_trim ) 
 );
 
-module mux xmux (
+mux xmux (
  .vddl( VDPWR ),
  .vss( VGND ),
  .i_sel( w_reg_pointer ),
@@ -220,7 +221,7 @@ assign uio_out[0] = VGND;
 assign uio_out[1] = VGND;
 assign uio_out[2] = VGND;
 assign uio_out[3] = VGND;
-assign uio_out[4] = o_miso;
+assign uio_out[4] = w_miso;
 assign uio_out[5] = VGND;
 assign uio_out[6] = VGND;
 assign uio_out[7] = VGND;
