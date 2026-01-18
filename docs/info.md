@@ -1,5 +1,7 @@
 ## How it works
 
+![top-level schematic](pic/tt_um_cw_vref.png)
+
 This circuit is a Current-Mode Bandgap Reference which is fully 
 self-biased. It is powered from a nominal 3.3V supply. 
 
